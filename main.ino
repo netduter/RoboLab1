@@ -5,10 +5,11 @@ TrafficLights* trafficLights=NULL;
 FireAlarm* fireAlarm=NULL;
 ObjectDetector* objectDetector=NULL;
 void setup() {
-  
+
+ 
 
 //το Pin 2 ελέγχει το κόκκινο , τα pins 4 κ 3 φτιάχνουν το πορτοκαλί χρώμα (Ο Θεός να το κάνει) , το Pin 7 το κόκκινο
-// , Οι επόμενες τρεις τιμές είναι σε millisecond και ορίζουν πόσο θα διαρκεί το κόκκινο , πορτοκαλί και πράσινο
+//  , Οι επόμενες τρεις τιμές είναι σε millisecond και ορίζουν πόσο θα διαρκεί το κόκκινο , πορτοκαλί και πράσινο
 //χρώμα αντίστοιχα.
   trafficLights=new TrafficLights(2,4,3,7,2000,2000,5000);
 
