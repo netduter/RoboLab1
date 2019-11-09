@@ -26,27 +26,17 @@ void setup() {
 
 
 
- unsigned long tmp=0;
- static int i=0;
+
 void loop() {
 
-   tmp=micros();
+  
  
    trafficLights->update();
   
    fireAlarm->update();   
-  
-  
    
-
-    if(i++<1000){
-
-        objectDetector->printNewDistance();
-       Serial.print("Elapsed time: ");
-
-       Serial.print( (micros()-tmp));
-       Serial.println(" microseconds");
-    }
+   objectDetector->printNewDistance();
+  
   
    
 
